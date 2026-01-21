@@ -1,0 +1,18 @@
+# Compiled binaries
+*.exe
+*.out
+*.class
+
+# C/C++ build artifacts
+*.o
+*.obj
+*.a
+*.so
+
+# Debug folders
+.vscode/
+.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
