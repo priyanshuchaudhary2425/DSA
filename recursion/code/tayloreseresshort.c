@@ -18,11 +18,14 @@ double e1(int x, int n) {
 }
 
 double e2(int x, int n) {
+    static double s=1;
     if(n == 0)
-        return 1;
-    return e2(x, n-1) + (x / (double)n);
-}
+        return s;
+    e2(x, n-1);
+    s = s+ (x/ (double) n);
 
+    return s ;
+}
 
 
 int main() {
